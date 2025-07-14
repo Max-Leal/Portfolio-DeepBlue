@@ -1,0 +1,61 @@
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    color: #1a73e8;
+    font-size: 3em;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.team-member {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #1a73e8;
+    object-fit: cover;
+}
+
+.team-member h2 {
+    color: #FFFFFF;
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.team-member p {
+    color: #B0B0B0;
+}
+
+.social-links a {
+    color: #B0B0B0;
+    font-size: 1.8em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1a73e8;
+}
