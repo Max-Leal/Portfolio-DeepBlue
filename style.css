@@ -1,11 +1,17 @@
 body {
-    background-color: #121212;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.025)), url('assets/background.png');
+    
+    background-color: #0d2a41; 
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    
     color: #FFFFFF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 40px;
     text-align: center;
-    overflow-x: hidden; /* Previne scroll horizontal */
+    overflow-x: hidden; 
 }
 
 /* --- ANIMAÇÕES --- */
@@ -28,9 +34,9 @@ body {
 
 /* --- CABEÇALHO E LOGO --- */
 header .logo {
-    width: 180px; /* Tamanho da logo */
+    width: 180px; 
     margin-bottom: 10px;
-    animation: float 5s ease-in-out infinite; /* Animação de flutuação */
+    animation: float 5s ease-in-out infinite;
 }
 
 header h1 {
@@ -40,21 +46,21 @@ header h1 {
 }
 
 header p {
-    color: #B0B0B0;
+    color: #E0E0E0;
     font-size: 1.1em;
 }
 
 /* --- SEÇÃO SOBRE O PROJETO --- */
 .project-description {
-    background-color: #1e1e1e;
+    background-color: rgba(30, 30, 30, 0.85); 
     padding: 25px 40px;
-    margin: 50px auto; /* Espaçamento */
+    margin: 50px auto;
     max-width: 800px;
     border-radius: 10px;
     text-align: justify;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #1a73e8; 
     
-    /* Animação */
     animation: fadeIn 0.8s ease-out forwards;
     opacity: 0;
     animation-delay: 0.2s;
@@ -69,21 +75,20 @@ header p {
 }
 
 .project-description p {
-    color: #B0B0B0;
-    line-height: 1.6; /* Melhora a legibilidade */
+    color: #E0E0E0;
+    line-height: 1.6;
 }
 
 /* --- GRID E CARDS --- */
 .team-grid {
     display: grid;
-    /* Começa com 3 colunas em telas grandes */
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
-    padding: 20px 0; /* Ajustado */
+    padding: 20px 0;
 }
 
 .team-member {
-    background-color: #1e1e1e;
+    background-color: rgba(30, 30, 30, 0.85);
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -121,7 +126,7 @@ header p {
     color: #FFFFFF;
     margin-top: 15px;
     font-size: 1.5em;
-    word-wrap: break-word; /* Garante que nomes longos não quebrem o layout */
+    word-wrap: break-word;
 }
 
 .team-member p {
@@ -159,10 +164,11 @@ header p {
 @media (max-width: 600px) {
     body {
         padding: 25px 15px;
+        background-attachment: scroll; /* Melhora performance em alguns celulares */
     }
 
     header .logo {
-        width: 140px; /* Logo menor */
+        width: 140px; 
     }
     
     header h1 {
