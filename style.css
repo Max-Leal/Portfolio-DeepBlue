@@ -34,20 +34,39 @@ body {
 
 /* --- CABEÇALHO E LOGO --- */
 header .logo {
-    width: 180px; 
+    width: 280px; 
     margin-bottom: 10px;
     animation: float 5s ease-in-out infinite;
 }
 
-header h1 {
+h1 {
     color: #1a73e8;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: 0;
 }
 
 header p {
     color: #E0E0E0;
     font-size: 1.1em;
+}
+
+.box {
+     background-color: rgba(30, 30, 30, 0.85); 
+    padding: 25px 40px;
+    margin: 0;
+    max-width: 1900px;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #1a73e8; 
+    
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+.box h1 {
+    text-align: center;
 }
 
 /* --- SEÇÃO SOBRE O PROJETO --- */
@@ -71,7 +90,7 @@ header p {
     text-align: center;
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 .project-description p {
